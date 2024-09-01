@@ -1,0 +1,686 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #141414;
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: #00CAB6;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #00CAB6;
+}
+
+/* Toggle button for mobile menu */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Overlay menu styles */
+.nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    overflow: hidden;
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+.nav-overlay-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-overlay-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 15px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-overlay-menu a:hover {
+    color: #00CAB6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+#images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.circle {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: gray;
+    text-align: center;
+    line-height: 1;
+}
+
+.step-text {
+    font-weight: bold;
+    color: #0070ba;
+}
+
+.details {
+    display: block;
+    margin-top: 10px;
+}
+
+#images > div:nth-child(2),
+#images > div:nth-child(4) {
+    display: flex;
+    align-items: center;
+}
+
+#images i {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 500px) {
+    #images {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    #images > div:nth-child(2),
+    #images > div:nth-child(4) {
+        display: none;
+    }
+
+    .circle {
+        padding: 10px;
+    }
+
+    .details {
+        margin-top: 5px;
+    }
+
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header Section */
+#head_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+/*paypal logo*/
+#paypal_logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+#drop_down {
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+}
+
+#personal i {
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+#button1, #button2 {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 0.875rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#button1 {
+    border: 1px solid #0070ba;
+    color: #0070ba;
+    background-color: transparent;
+}
+
+#button2 {
+    background-color: #0070ba;
+    color: #fff;
+    border: none;
+}
+
+#button1:hover {
+    background-color: #0070ba;
+    color: #fff;
+}
+
+#button2:hover {
+    background-color: #005999;
+}
+
+#man_image {
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#man_image img {
+    width: 100%;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#writing {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#btn-container {
+    top:100px;
+}
+
+#sign_up_btn {
+    background-color: #0070ba;
+    color: #fff;
+    border: 2px solid #0070ba;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    width: 500px;
+}
+
+#sign_up_btn:hover {
+    background-color: #0070ba;
+    color: #fff;
+}
+
+/* More Text Section */
+#more-text-container {
+    margin-top: 20px;
+}
+
+#more-text {
+    font-size: 1rem;
+    color: #fff;
+}
+
+#hii {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Even More Text Section */
+#even-more-text-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#even-more-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Lower Part Section */
+#lower-part {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#connection {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#for-buyers {
+    margin-top: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#images div {
+    width: 90%;
+    max-width: 400px;
+}
+
+#learn-more, #learn_more, #sign_up_btn2 {
+    background-color: #0070ba;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#learn-more:hover, #learn_more:hover, #sign_up_btn2:hover {
+    background-color: #005999;
+}
+
+#third_part {
+    background-color: #003086;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#texter-con {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#texter, #texter_2 {
+    width: 90%;
+}
+
+#texter > h1, #texter_2 > h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#texter a, #texter_2 a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#texter a:hover, #texter_2 a:hover {
+    color: #b3d9ff;
+}
+
+/* Footer Section */
+#why {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#ul1, #ul2, #mee {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ul1 li, #ul2 li {
+    font-weight: bold;
+}
+
+#ul2 {
+    color: #999;
+}
+
+#p {
+    color: #999;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#warn {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    #head_section {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    #paypal_logo img {
+        max-width: 120px;
+    }
+    
+    #drop_down {
+        text-align: center;
+    }
+    
+    #button1, #button2 {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    /* Man Image Section */
+    #man_image {
+        padding: 20px 10px;
+    }
+    
+    #text {
+        position: static;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    #writing {
+        font-size: 1.5rem;
+    }
+    
+    #btn-container {
+        position:relative;
+    }
+    
+    #sign_up_btn {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    /* More Text Section */
+    #more-text-container {
+        margin-top: 20px;
+    }
+    
+    #more-text {
+        font-size: 1rem;
+    }
+    
+    #hii {
+        margin-top: 10px;
+    }
+    
+    /* Lower Part Section */
+    #lower-part {
+        padding: 20px;
+    }
+    
+    #images {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #learn-more, #learn_more, #sign_up_btn2 {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    /* Third Part Section */
+    #third_part {
+        padding: 40px 20px;
+    }
+    
+    #h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    #texter, #texter_2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #texter_2 {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #texter-con {
+        flex-direction: column; /* Stacks the items in a column */
+    }
+
+    #texter, #texter_2 {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 20px; /* Space between items */
+    }
+
+    #texter:last-child {
+        margin-bottom: 0; /* No margin for the last item */
+    }
+    #writing{
+        position:absolute;
+        top:10%;
+    }
+    #btn-container{
+        position:relative;
+        top:10%;
+        left: -25%;
+    }
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Default styles */
+#third_part {
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in element's total width and height */
+}
+
+#texter-con {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the two text blocks */
+    margin-bottom: 20px; /* Space below the text blocks */
+}
+
+#texter, #texter_2 {
+    width: 48%; /* Adjust width to fit side-by-side layout with space in between */
+}
+
+#signup-btn-container {
+    text-align: center; /* Center the button horizontally */
+    margin-top: 20px; /* Space above the button */
+}
+
+#signup-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0070ba; /* Example background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase; /* Make button text uppercase for better readability */
+}
+
+#signup-btn:hover {
+    background-color: #005a9c; /* Example hover color */
+}
+
+@media (max-width: 768px) {
+    #texter-con {
+        flex-direction: column; /* Stack the text blocks vertically on smaller screens */
+    }
+
+    #texter, #texter_2 {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Space between text blocks */
+    }
+
+    #texter:last-child {
+        margin-bottom: 0; /* Remove margin for the last text block */
+    }
+}
+
+/* Default styles */
+#ul2 {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+#ul2 ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Align items horizontally */
+}
+
+#ul2 ul li {
+    margin-right: 20px; /* Space between list items */
+}
+
+#ul2 span {
+    margin: 0 20px; /* Space on either side of the spans */
+}
+
+#ul2 #mee {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+#ul2 #mee li {
+    margin-right: 20px; /* Space between list items */
+}
+
+#p {
+    text-align: center; /* Center-align the paragraph */
+    margin-top: 20px; /* Space above the paragraph */
+}
+
+#warn {
+    text-align: center; /* Center-align the warning */
+    margin-top: 10px; /* Space above the warning */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #ul2 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    #ul2 ul {
+        margin-bottom: 10px; /* Space between lists */
+    }
+
+    #ul2 span {
+        margin: 10px 0; /* Space between spans */
+    }
+
+    #ul2 ul li {
+        margin-right: 10px; /* Adjust space between list items */
+    }
+}
