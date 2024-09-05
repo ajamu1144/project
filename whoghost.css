@@ -1,0 +1,187 @@
+.navbar {
+	background-color: #141414;
+	color: white;
+	padding: 15px 20px;
+	position: relative;
+}
+
+.navbar-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo a {
+	color: #00CAB6;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.nav-menu {
+	display: flex;
+	gap: 20px;
+}
+
+.nav-menu a {
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+	color: #00CAB6;
+}
+
+/* Toggle button for mobile menu */
+.nav-toggle {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.nav-toggle .bar {
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 3px 0;
+	transition: all 0.3s ease;
+}
+
+/* Overlay menu styles */
+.nav-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+	overflow: hidden;
+	z-index: 1000;
+	padding-top: 60px;
+}
+
+.nav-overlay-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-overlay-menu a {
+	color: white;
+	text-decoration: none;
+	font-size: 24px;
+	margin: 15px 0;
+	transition: color 0.3s ease;
+}
+
+.nav-overlay-menu a:hover {
+	color: #00CAB6;
+}
+
+
+body {
+	background: rgb(10, 10, 255, 1.0);
+}
+
+#login{
+	border: 2px solid white;
+	background: white;
+	border-radius:8px;
+	width: 400px;
+	margin-top:10px ;
+/*	padding: 30px;*/
+	height: 640px;
+}
+
+#login-text{
+	text-align: center;
+	color: black;
+	background: white;
+	font-family: verdana;
+	font-size: 30px;
+}
+
+@media (max-width: 50px) {
+	#dash{
+		width: 20px;
+	}
+}
+
+img{
+	margin: 60px;
+}
+
+#email_password{
+	display: flex;
+	flex-direction: column;
+}
+
+#email_password>input{
+	width: 300px;
+	padding: 20px;
+	border: 2px solid rgb(0, 0, 0, 0.2);
+	border-radius: 5px;
+	margin-left: 30px;
+}
+
+#email_password > label{
+	text-align: left;
+	margin-left: 30px;
+	color: #5E636E;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+span{
+	margin: 0;
+	position: relative;
+	color: blue;
+	font-weight: bold;
+	font-family: verdana;
+	bottom: 40px;
+	right: 30px;
+	text-align: right;
+}
+
+#check{
+	text-align: left;
+}
+
+#moi{
+	display: flex;
+	margin: 20px;
+}
+
+#login_btn{
+	border: none;
+	background: #1062FE;
+	padding:20px 150px;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+}
+
+#that_stuff{
+	display: flex;
+	justify-content: center;
+	font-family: verdana;
+	font-weight: bold;
+	color: rgb(0, 0, 0, 0.3);
+}
+
+#dash{
+	transform: scale(20, 1);
+	margin-right: 90px;
+	margin-left: 90px;
+}
+
+#facebook{
+	border: none;
+	padding: 20px 30px 20px 30px;
+	border-radius: 5px;
+	color: ;
+}
